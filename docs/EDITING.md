@@ -81,3 +81,11 @@ JavaScript가 찾는 HTML `id`와 `data-*` 속성은 문구만 바꿀 때 삭제
 ## 로컬에서 파일이 여러 곳에 보일 때
 
 실제 Git 저장소는 `work/github-pages`입니다. 이 폴더를 편집기에서 열어 작업하세요. `dist`는 미리보기 사본입니다. 예전 루트 CSS·JS 사본은 상위 작업공간의 `work/legacy-source-backup`에 보관했습니다.
+
+## 스토리와 캠페인 인터랙션
+
+- `scripts/story.js`: 첫 화면의 두 문구, 스크롤 원 그래프, 터치 사진 전환.
+- `styles/story.css`: 통계·네 가지 감각 그래픽·제품 렌더·캠페인 반응형 배치.
+- `assets/campaign/*-silhouette.webp`: 기본 실루엣. 같은 폴더의 실제 사진은 호버/탭으로 표시됩니다.
+- `assets/products/hum-open-render.webp`, `hum-closed-render.webp`: 제품 열기/닫기 이미지.
+- 90%는 현재 디자인 시안 예시입니다. 검증된 출처가 생기면 `#story`의 설명과 접근성 라벨을 함께 수정하세요.

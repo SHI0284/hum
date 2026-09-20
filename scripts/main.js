@@ -4,20 +4,20 @@
 // ── 01. 제품 뒷면 열기/닫기 ──
 const views = {
   open: {
-    image: 'assets/products/hum-back-open.png',
+    image: 'assets/products/hum-open-render.webp',
     alt: '뒷면 원판을 열어 소리를 채집하는 HUM 제품 설계',
     state: '01 / RECORDING ON',
     title: '바깥의 소리에 귀 기울이세요.',
     description:
-      '원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다. 화면 대신 지금 머무는 공간을 바라보세요.',
+      '원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다.\n화면 대신 지금 머무는 공간을 바라보세요.',
   },
   closed: {
-    image: 'assets/products/hum-back-closed.png',
+    image: 'assets/products/hum-closed-render.webp',
     alt: '뒷면 원판을 닫아 소리 채집을 마친 HUM 제품 설계',
     state: '02 / RECORDING OFF',
     title: '하나의 순간을 간직하세요.',
     description:
-      '원판을 닫으면 채집을 마칩니다. 방금 들었던 소리가 오늘의 감각으로 남고, 다시 돌아볼 하나의 기록이 됩니다.',
+      '원판을 닫으면 채집을 마칩니다.\n방금 들었던 소리가 오늘의 감각으로 남고, 다시 돌아볼 하나의 기록이 됩니다.',
   },
 };
 document.querySelectorAll('[data-mode]').forEach((button) => {

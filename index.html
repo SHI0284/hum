@@ -37,11 +37,19 @@
       href="styles/product-detail.css?v=426fc20085"
     />
     <script
-      src="scripts/main.js?v=e6f2effd8a"
+      src="scripts/main.js?v=e237237016"
       defer
     ></script>
     <script
       src="scripts/experience.js?v=4987398892"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="styles/story.css?v=74dc586bd8"
+    />
+    <script
+      src="scripts/story.js?v=edf14dc586"
       defer
     ></script>
   </head>
@@ -126,18 +134,17 @@
                 ARCHIVING DEVICE
               </span>
             </div>
+            <p class="hero-prelude mono">Before words, there is hum...</p>
             <h1 id="hero-title">
-              일상을 듣다.
+              귀 기울인 순간을,
               <br />
-              감각을
-              <em>남기다.</em>
+              감각으로
+              <em>남기다</em>
             </h1>
             <p class="intro">
-              스쳐 가던 소리가, 나만의 형태로.
+              지나치던 소리에 귀 기울이고
               <br />
-              세상에 귀 기울이는 작은 움직임에서
-              <br />
-              HUM의 이야기가 시작됩니다.
+              오늘의 소리를 나만의 형태로 남깁니다.
             </p>
             <div class="hero-actions">
               <a
@@ -213,77 +220,6 @@
         </div>
       </section>
 
-      <!-- 02. 캠페인 — 모델 포스터 | 바로가기: #campaign -->
-      <section
-        id="campaign"
-        class="campaign-section"
-        aria-labelledby="campaign-title"
-      >
-        <div class="campaign-heading">
-          <p class="mono">HUM / THE CAMPAIGN — 2026</p>
-          <h2 id="campaign-title">
-            가까이 두고,
-            <br />
-            <span class="text-accent">더 깊이 듣다.</span>
-          </h2>
-          <p>
-            손에 닿는 작은 형태.
-            <br />
-            그 안에 담기는, 당신의 하루.
-          </p>
-        </div>
-        <div class="campaign-posters">
-          <figure class="campaign-poster campaign-duo">
-            <img
-              src="assets/campaign/two-models-with-hum.webp"
-              alt="두 모델이 HUM 디바이스를 카메라 가까이 들고 있는 캠페인 사진"
-              width="2000"
-              height="1440"
-              loading="lazy"
-            />
-            <figcaption>
-              <span class="mono">01 / LISTEN CLOSER</span>
-              <p>
-                세상과 나 사이,
-                <br />
-                하나의 HUM.
-              </p>
-              <a href="#device">
-                디바이스 살펴보기
-                <span aria-hidden="true">↗</span>
-              </a>
-            </figcaption>
-          </figure>
-          <figure class="campaign-poster campaign-profile">
-            <img
-              src="assets/campaign/model-profile-with-hum.webp"
-              alt="모델이 HUM의 원형 뒷면을 얼굴 가까이에 들고 있는 측면 사진"
-              width="1086"
-              height="1448"
-              loading="lazy"
-            />
-            <figcaption>
-              <span class="mono">02 / KEEP A MOMENT</span>
-              <p>
-                들었던 순간을,
-                <br />
-                곁에.
-              </p>
-              <img
-                src="assets/brand/hum-logo.svg"
-                alt="HUM"
-                width="132"
-                height="50"
-              />
-            </figcaption>
-          </figure>
-        </div>
-        <div class="campaign-foot mono">
-          <span>OPEN. LISTEN. WONDER!</span>
-          <span>A PRODUCT BY code&amp;</span>
-        </div>
-      </section>
-
       <!-- 03. 브랜드 이야기 | 바로가기: #story -->
       <section
         id="story"
@@ -293,35 +229,117 @@
           <span>01 / OUR STORY</span>
           <span>A LITTLE LESS SCROLL. A LITTLE MORE SOUL.</span>
         </div>
-        <div class="story-layout">
-          <h2>
-            늘 걷던 길에도,
-            <br />
-            <span class="text-accent">처음 듣는 순간이 있다.</span>
-          </h2>
-          <div class="story-copy">
-            <p>
-              출근길의 발걸음, 정류장에 스치는 바람,
+        <div class="story-stat-layout">
+          <div class="story-stat-copy">
+            <h2>이동 시간을 채우는 화면 속 콘텐츠</h2>
+            <div class="stat-line">
+              <p>이동 과정에서 스마트폰을 사용</p>
+              <span></span>
+              <strong>
+                90
+                <small>%</small>
+              </strong>
+            </div>
+            <p class="stat-note">
+              이동은 주변 환경을 경험할 수 있는 시간이지만, 화면에 시선을 두는 동안 지나치는 소리도
+              있습니다.
               <br />
-              오후의 창문을 두드리는 빗소리.
+              90%는 제공된 디자인 시안의 예시 수치입니다.
             </p>
-            <p>
-              화면을 바라보는 동안 지나쳤던 소리들.
-              <br />
-              HUM은 이동과 기다림의 시간을
-              <br />
-              주변에 귀 기울이는 작은 루틴으로 바꿉니다.
-            </p>
-            <span class="small-note">일상을 듣고, 감각을 모으는 사운드–비주얼 아카이빙.</span>
+          </div>
+          <div
+            class="scroll-pie"
+            role="img"
+            aria-label="스마트폰 사용 비율 90%, 디자인 시안 예시"
+          >
+            <svg
+              viewBox="0 0 100 100"
+              aria-hidden="true"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="50"
+                fill="#e4f0f2"
+              />
+              <circle
+                class="pie-fill"
+                cx="50"
+                cy="50"
+                r="25"
+                fill="none"
+                stroke="#000"
+                stroke-width="50"
+                pathLength="100"
+                stroke-dasharray="0 100"
+                transform="rotate(-90 50 50)"
+              />
+            </svg>
           </div>
         </div>
-        <div class="story-words mono">
-          <span>OPEN.</span>
-          <span>LISTEN.</span>
-          <span>WONDER!</span>
+      </section>
+      <!-- 감각의 네 단계 -->
+      <section
+        class="values-section section"
+        aria-labelledby="values-title"
+      >
+        <p class="mono">01 / FROM SOUND TO HUM</p>
+        <h2 id="values-title">지나치던 소리를, 일상의 기록으로.</h2>
+        <div class="values-grid">
+          <figure>
+            <img
+              src="assets/artwork/sensual-collecting.webp"
+              alt=""
+              loading="lazy"
+              width="575"
+              height="747"
+            />
+            <figcaption>
+              <span class="mono">SENSUAL COLLECTING</span>
+              <p>감각적 채집</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/artwork/expect.webp"
+              alt=""
+              loading="lazy"
+              width="575"
+              height="747"
+            />
+            <figcaption>
+              <span class="mono">EXPECT</span>
+              <p>귀 기울이는 기대감</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/artwork/archive.webp"
+              alt=""
+              loading="lazy"
+              width="575"
+              height="747"
+            />
+            <figcaption>
+              <span class="mono">ARCHIVE</span>
+              <p>일상의 아카이브</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/artwork/sensual-extension.webp"
+              alt=""
+              loading="lazy"
+              width="575"
+              height="747"
+            />
+            <figcaption>
+              <span class="mono">SENSUAL EXTENSION</span>
+              <p>감각의 확장</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
-
       <!-- 04. 제품 소개 — 개폐 동작과 제품 갤러리 | 바로가기: #device -->
       <section
         id="device"
@@ -334,8 +352,8 @@
         <div class="device-layout">
           <figure class="product-figure">
             <img
-              src="assets/products/hum-front-concept.png"
-              alt="사운드 아트워크가 표시된 화면과 스피커를 갖춘 HUM 디바이스 전면 디자인"
+              src="assets/products/hum-studio-square.webp"
+              alt="원형 뒷면과 측면이 보이는 HUM 제품 렌더"
               loading="lazy"
               width="1150"
               height="967"
@@ -343,15 +361,15 @@
             <figcaption class="mono">HUM DEVICE / DESIGN CONCEPT</figcaption>
           </figure>
           <div class="device-copy">
-            <p class="eyebrow">손끝에서 시작되는 감각</p>
+            <p class="eyebrow">02 / FROM HUMMING TO HUM</p>
             <h2>
-              소리를 향해
-              <br />
-              <span class="text-accent">작은 틈을 열다.</span>
+              소리를 기록하는
+              <span class="text-accent">새로운 방식</span>
             </h2>
             <p class="body-copy">
-              소리를 받아들이는 ‘귀’와 세상으로 연결되는 ‘틈’에서 출발한 디자인. 원판을 여는 작은
-              움직임으로, 주변에 집중하는 순간을 만듭니다.
+              HUM은 소리를 받아들이는 작은 사운드 아카이빙 디바이스입니다.
+              <br />
+              화면을 여는 작은 움직임으로 주변에 집중하고, 일상의 소리를 나만의 기록으로 간직합니다.
             </p>
             <a
               class="structure-link"
@@ -359,23 +377,14 @@
             >
               제품 구성도 살펴보기 ↗
             </a>
-            <div class="device-facts">
-              <div>
-                <span class="mono">01</span>
-                <p>열면, 채집의 시작</p>
-              </div>
-              <div>
-                <span class="mono">02</span>
-                <p>닫으면, 하나의 기록</p>
-              </div>
-              <div>
-                <span class="mono">03</span>
-                <p>화면 위로 피어나는 소리</p>
-              </div>
-            </div>
-            <p class="small-note">
-              현재 시제품 개발 중이며, 제품 이미지와 동작은 설계안을 바탕으로 합니다.
-            </p>
+            <img
+              class="device-three-views"
+              src="assets/products/hum-three-views.webp"
+              alt="HUM의 전면, 측면, 후면 구성도"
+              loading="lazy"
+              width="1043"
+              height="342"
+            />
           </div>
         </div>
         <div class="interaction">
@@ -383,7 +392,7 @@
             <div class="interaction-image">
               <img
                 id="interaction-image"
-                src="assets/products/hum-back-open.png"
+                src="assets/products/hum-open-render.webp"
                 alt="뒷면 원판을 열어 소리를 채집하는 HUM 제품 설계"
                 loading="lazy"
                 width="1000"
@@ -425,8 +434,9 @@
               class="body-copy"
               id="interaction-description"
             >
-              원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다. 화면 대신 지금 머무는 공간을
-              바라보세요.
+              원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다.
+              <br />
+              화면 대신 지금 머무는 공간을 바라보세요.
             </p>
             <p class="small-note">제품의 개폐 동작을 보여주는 디자인 미리보기입니다.</p>
           </div>
@@ -564,6 +574,102 @@
         </p>
       </section>
 
+      <!-- 캠페인 — 실루엣에서 실제 사진으로 -->
+      <section
+        id="campaign"
+        class="campaign-section"
+        aria-labelledby="campaign-title"
+      >
+        <div class="campaign-heading">
+          <p class="mono">HUM / THE CAMPAIGN — 2026</p>
+          <h2 id="campaign-title">
+            나만의 기록에서,
+            <span>함께 나누는 경험</span>
+            으로
+          </h2>
+          <p>
+            <span class="mono">FROM PERSONAL TO SHARED</span>
+            <br />
+            HUM은 일상의 발견을 소리로 남겨 나만의 형태로 기록하고,
+            <br />
+            그 기록을 서로 나누며 감각의 경험을 연결합니다.
+          </p>
+        </div>
+        <div class="campaign-posters">
+          <figure class="campaign-poster campaign-profile">
+            <img
+              class="poster-silhouette"
+              src="assets/campaign/model-profile-silhouette.webp"
+              alt="HUM을 든 모델의 실루엣"
+              loading="lazy"
+            />
+            <img
+              class="poster-photo"
+              src="assets/campaign/model-profile-with-hum.webp"
+              alt="HUM을 든 모델의 실제 캠페인 사진"
+              loading="lazy"
+            />
+            <button
+              class="poster-reveal"
+              type="button"
+              aria-label="실제 캠페인 사진 보기"
+              aria-pressed="false"
+            ></button>
+            <figcaption>
+              <span class="mono">YOUR SOUND, YOUR ARCHIVE</span>
+              <p>
+                나만의 소리를
+                <br />
+                기록하다
+              </p>
+              <img
+                src="assets/brand/hum-logo.svg"
+                alt="HUM"
+                width="132"
+                height="50"
+              />
+            </figcaption>
+          </figure>
+          <figure class="campaign-poster campaign-duo">
+            <img
+              class="poster-silhouette"
+              src="assets/campaign/two-models-silhouette.webp"
+              alt="HUM을 든 모델의 실루엣"
+              loading="lazy"
+            />
+            <img
+              class="poster-photo"
+              src="assets/campaign/two-models-with-hum.webp"
+              alt="HUM을 든 모델의 실제 캠페인 사진"
+              loading="lazy"
+            />
+            <button
+              class="poster-reveal"
+              type="button"
+              aria-label="실제 캠페인 사진 보기"
+              aria-pressed="false"
+            ></button>
+            <figcaption>
+              <span class="mono">YOUR SOUND, SHARED</span>
+              <p>
+                서로의 소리를
+                <br />
+                나누다
+              </p>
+              <img
+                src="assets/brand/hum-logo.svg"
+                alt="HUM"
+                width="132"
+                height="50"
+              />
+            </figcaption>
+          </figure>
+        </div>
+        <div class="campaign-foot mono">
+          <span>OPEN. LISTEN. WONDER!</span>
+          <span>A PRODUCT BY code&amp;</span>
+        </div>
+      </section>
       <!-- 05. 사용 흐름 — 채집, 선택, 기록 | 바로가기: #journey -->
       <section
         id="journey"
