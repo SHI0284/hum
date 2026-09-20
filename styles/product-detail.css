@@ -1,11 +1,14 @@
-/* Shared title accent. Matches the HUM hero: mint → blue → pale yellow. */
+/* Use gradient accents sparingly: hero and white campaign heading only. */
 :root {
   --brand-gradient: linear-gradient(115deg, #b8dee3 0%, #91b8e0 60%, #ffe8b9 100%);
 }
 h2 .text-accent,
-.campaign-heading h2 span,
-.hero-v2 h1 em,
 .lab-section h2 span {
+  background: none;
+  color: inherit;
+}
+.campaign-heading h2 span,
+.hero-v2 h1 em {
   display: inline-block;
   background: var(--brand-gradient);
   background-clip: text;
@@ -37,7 +40,7 @@ h2 .text-accent,
 .campaign-profile {
   aspect-ratio: auto;
   background: #fff;
-  overflow: visible;
+  overflow: hidden;
 }
 .campaign-poster > img {
   display: block;
@@ -46,25 +49,27 @@ h2 .text-accent,
   object-fit: contain;
 }
 .campaign-poster::after {
-  display: none;
+  display: block;
+  inset: 45% 0 0;
+  background: linear-gradient(transparent, #050b10b3);
 }
 .campaign-poster figcaption {
-  position: relative;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  color: #101820;
-  padding: 24px 0 12px;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  color: #fff;
+  padding: 0;
 }
 .campaign-poster figcaption > .mono {
-  color: #52616d;
+  color: #ffffffc9;
 }
 .campaign-poster figcaption > a {
-  border-color: #10182050;
+  border-color: #ffffff80;
 }
 .campaign-poster figcaption > img {
-  filter: none;
-  bottom: 12px;
+  filter: invert(1);
+  bottom: 0;
 }
 .campaign-poster:hover > img {
   transform: none;
@@ -179,5 +184,20 @@ h2 .text-accent,
   .lab-section h2 span {
     background: none;
     color: CanvasText;
+  }
+}
+
+@media (max-width: 760px) {
+  .campaign-poster figcaption {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  .campaign-duo figcaption > p {
+    font-size: clamp(22px, 6vw, 32px);
+    margin-top: 8px;
+  }
+  .campaign-duo figcaption > a {
+    margin-top: 12px;
   }
 }
