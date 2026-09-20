@@ -201,3 +201,15 @@ h2 .text-accent,
     margin-top: 12px;
   }
 }
+
+/* Coloured panels always use solid black headings. */
+#story h2,
+#story h2 .text-accent,
+#city h2,
+#city h2 .text-accent,
+.closing h2,
+.closing h2 .text-accent {
+  background: none;
+  color: #000;
+  -webkit-text-fill-color: #000;
+}
