@@ -77,3 +77,7 @@ HUM은 code&의 제품을 소개하는 단일 페이지 브랜드 사이트입�
 JavaScript가 찾는 HTML `id`와 `data-*` 속성은 문구만 바꿀 때 삭제하지 마세요.
 두 JavaScript 파일은 `main.js` → `experience.js` 순서로 로드합니다.
 모션 최소화 설정과 키보드 포커스 스타일도 함께 유지하세요.
+
+## 로컬에서 파일이 여러 곳에 보일 때
+
+실제 Git 저장소는 `work/github-pages`입니다. 이 폴더를 편집기에서 열어 작업하세요. `dist`는 미리보기 사본입니다. 예전 루트 CSS·JS 사본은 상위 작업공간의 `work/legacy-source-backup`에 보관했습니다.
