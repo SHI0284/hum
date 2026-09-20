@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="HUM" width="240">
+  <img src="assets/logo-transparent.svg" alt="HUM" width="240">
 </p>
 <p align="center"><strong>일상을 듣다. 감각을 남기다.</strong><br>Sound–Visual Archiving Device · A product by code&amp;</p>
 <p align="center"><a href="https://hum-archive.com/">브랜드 사이트</a> · <a href="https://hum-archive.com/#archive">그래픽 조합 체험</a></p>
@@ -59,7 +59,7 @@ HUM은 사용자가 동의한 익명 데이터를 통해 생활권의 음환경�
 
 ## Made by code&
 
-<img src="assets/code-and.png" alt="code& 회사 로고" width="200">
+<img src="assets/code-and-transparent.svg" alt="code& 회사 로고" width="200">
 
 
 **code&는 회사명이며, HUM은 code&가 만드는 제품입니다.**
