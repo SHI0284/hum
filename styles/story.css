@@ -15,49 +15,72 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+/* Story reference: 1461px-wide spread, scaled proportionally on desktop. */
 #story {
-  padding-top: 64px;
-  padding-bottom: 56px;
+  padding: 4.1vw 5.2% 4.3vw;
+}
+#story .section-label {
+  font-size: clamp(7px, 0.62vw, 10px);
+  margin-bottom: 2.25vw;
 }
 .story-stat-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 24%;
-  gap: 5%;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 22%;
+  gap: 4.6%;
+  align-items: start;
 }
 #story h2 {
-  font-size: clamp(26px, 3.6vw, 54px);
-  line-height: 1.3;
+  font-size: clamp(26px, 3.8vw, 76px);
+  line-height: 1.25;
   letter-spacing: -0.055em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+#story h2 .story-white {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 .stat-line {
   display: flex;
-  gap: 32px;
-  align-items: center;
-  margin: 60px 0 28px;
+  gap: 3.3vw;
+  align-items: baseline;
+  margin: 5.2vw 0 3.7vw;
   color: #000;
 }
 .stat-line p {
-  font-size: 18px;
+  font-size: clamp(15px, 1.6vw, 32px);
+  white-space: nowrap;
+  letter-spacing: -0.055em;
 }
 .stat-line > span {
   flex: 1;
   height: 1px;
-  background: #638b9160;
+  background: #668b9480;
 }
 .stat-line > strong {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
   font-family: 'Geist Mono', monospace;
-  font-size: clamp(48px, 6vw, 90px);
-  font-weight: 500;
-  letter-spacing: -0.07em;
+  font-size: clamp(60px, 7.1vw, 142px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  white-space: nowrap;
 }
 .stat-line small {
-  font-size: 0.42em;
+  font-size: 0.48em;
+  letter-spacing: -0.08em;
 }
 .stat-note {
-  font-size: 10px;
-  line-height: 1.8;
-  color: #243b40;
+  font-size: clamp(9px, 0.82vw, 16px);
+  line-height: 1.5;
+  color: #000;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+}
+.scroll-pie {
+  margin-top: 0.6vw;
 }
 .scroll-pie svg {
   width: 100%;
@@ -378,5 +401,42 @@
     background: none;
     color: CanvasText;
     -webkit-text-fill-color: CanvasText;
+  }
+}
+
+@media (max-width: 760px) {
+  #story {
+    padding: 42px 6%;
+  }
+  #story .section-label {
+    margin-bottom: 28px;
+  }
+  #story h2 {
+    white-space: normal;
+    font-size: 28px;
+  }
+  .story-stat-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .stat-line {
+    gap: 16px;
+    margin: 30px 0 24px;
+  }
+  .stat-line p {
+    font-size: 13px;
+  }
+  .stat-line > strong {
+    font-size: 58px;
+  }
+  .stat-note {
+    white-space: normal;
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .scroll-pie {
+    width: 150px;
+    justify-self: end;
+    margin-top: 0;
   }
 }
