@@ -17,7 +17,7 @@ const views = {
     state: '02 / RECORDING OFF',
     title: '하나의 순간을 간직하세요.',
     description:
-      '원판을 닫으면 채집을 마칩니다.\n방금 들었던 소리가 오늘의 감각으로 남고, 다시 돌아볼 하나의 기록이 됩니다.',
+      '원판을 닫으면 채집을 마칩니다.\n방금 들었던 소리가 오늘의 감각으로 남고,\n다시 돌아볼 하나의 기록이 됩니다.',
   },
 };
 document.querySelectorAll('[data-mode]').forEach((button) => {

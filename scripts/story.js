@@ -31,6 +31,23 @@
   motionPreference.addEventListener('change', queuePie);
   paintPie();
 
+  // 네 가지 감각: 클릭/키보드로 그래픽을 펼치고 다시 누르면 돌아옵니다.
+  document.querySelectorAll('.values-grid figure').forEach((card) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'value-toggle';
+    button.setAttribute(
+      'aria-label',
+      card.querySelector('figcaption').textContent.trim() + ' 그래픽 움직이기'
+    );
+    button.setAttribute('aria-pressed', 'false');
+    button.addEventListener('click', () => {
+      const active = card.classList.toggle('is-active');
+      button.setAttribute('aria-pressed', String(active));
+    });
+    card.append(button);
+  });
+
   // 터치에서는 탭, 키보드에서는 포커스/Enter로 실제 사진을 확인합니다.
   document.querySelectorAll('.poster-reveal').forEach((button) => {
     button.addEventListener('click', () => {

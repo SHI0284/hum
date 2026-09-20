@@ -43,7 +43,8 @@
   height: 1px;
   background: #638b9160;
 }
-.stat-line strong {
+.stat-line > strong {
+  font-family: 'Geist Mono', monospace;
   font-size: clamp(48px, 6vw, 90px);
   font-weight: 500;
   letter-spacing: -0.07em;
@@ -89,7 +90,7 @@
   object-fit: contain;
 }
 .values-grid figcaption span {
-  font-size: clamp(12px, 1.4vw, 20px);
+  font-size: clamp(16px, 1.7vw, 27px);
   letter-spacing: -0.035em;
 }
 .values-grid figcaption p {
@@ -276,4 +277,96 @@
 }
 .product-figure > img {
   mix-blend-mode: normal;
+}
+
+/* Reference product spread: square render and right-aligned orthographic views. */
+.device-layout {
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3.5%;
+}
+.device-copy h2 {
+  font-size: clamp(28px, 3.4vw, 60px);
+  letter-spacing: -0.065em;
+  white-space: nowrap;
+}
+.device-copy .eyebrow {
+  color: #000;
+  font-family: 'Geist Mono', monospace;
+  font-size: 9px;
+}
+.device-copy .body-copy {
+  max-width: none;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.device-three-views {
+  width: 63%;
+}
+.product-figure {
+  border-radius: 0;
+  box-shadow: none;
+}
+.values-grid figure {
+  position: relative;
+}
+.values-grid img {
+  transition:
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    filter 0.7s;
+}
+.value-toggle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.value-toggle:focus-visible {
+  outline: 1px solid #b8dee3;
+  outline-offset: 10px;
+}
+.values-grid figure.is-active img {
+  transform: translateY(-14px) rotate(9deg) scale(1.1);
+  filter: drop-shadow(0 0 12px #b8dee350);
+}
+@media (hover: hover) {
+  .values-grid figure:hover img {
+    transform: translateY(-14px) rotate(-6deg) scale(1.08);
+    filter: drop-shadow(0 0 12px #b8dee350);
+  }
+}
+@media (max-width: 760px) {
+  .device-layout {
+    grid-template-columns: 1fr;
+  }
+  .device-copy h2 {
+    white-space: normal;
+  }
+  .device-three-views {
+    width: 80%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .values-grid img {
+    transition: none;
+  }
+  .values-grid figure:hover img,
+  .values-grid figure.is-active img {
+    transform: none;
+  }
+}
+
+.device-copy .body-copy {
+  color: #000;
+}
+.device-spread-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #10182025;
+  padding-top: 26px;
+  margin-top: 48px;
+  color: #7c8a96;
+  font-size: 9px;
 }
