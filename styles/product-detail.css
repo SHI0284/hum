@@ -1,0 +1,183 @@
+/* Shared title accent. Matches the HUM hero: mint → blue → pale yellow. */
+:root {
+  --brand-gradient: linear-gradient(115deg, #b8dee3 0%, #91b8e0 60%, #ffe8b9 100%);
+}
+h2 .text-accent,
+.campaign-heading h2 span,
+.hero-v2 h1 em,
+.lab-section h2 span {
+  display: inline-block;
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* Campaign: original image proportions, white paper, left-aligned typography. */
+.campaign-section,
+.device {
+  background: #fff;
+  color: #101820;
+}
+.campaign-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  text-align: left;
+}
+.campaign-heading > p:last-child {
+  text-align: left;
+  color: #101820;
+}
+.campaign-posters {
+  grid-template-columns: 1.852fr 1fr;
+  align-items: start;
+}
+.campaign-poster,
+.campaign-profile {
+  aspect-ratio: auto;
+  background: #fff;
+  overflow: visible;
+}
+.campaign-poster > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.campaign-poster::after {
+  display: none;
+}
+.campaign-poster figcaption {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  color: #101820;
+  padding: 24px 0 12px;
+}
+.campaign-poster figcaption > .mono {
+  color: #52616d;
+}
+.campaign-poster figcaption > a {
+  border-color: #10182050;
+}
+.campaign-poster figcaption > img {
+  filter: none;
+  bottom: 12px;
+}
+.campaign-poster:hover > img {
+  transform: none;
+}
+/* Product construction section: factual labels for the supplied exploded view. */
+.structure-section {
+  background: #fff;
+  color: #101820;
+  border-top: 1px solid #10182020;
+}
+.structure-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 35px;
+}
+.structure-heading > p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #52616d;
+}
+.structure-figure {
+  margin-top: 45px;
+}
+.structure-figure img {
+  width: 100%;
+  height: auto;
+}
+.structure-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  color: #52616d;
+  font-size: 10px;
+}
+.structure-parts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin: 35px 0;
+}
+.structure-parts article {
+  border-top: 1px solid #10182030;
+  padding-top: 20px;
+}
+.structure-parts .mono {
+  font-size: 9px;
+  color: #587285;
+}
+.structure-parts h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.structure-parts p {
+  font-size: 12px;
+  color: #52616d;
+  line-height: 1.8;
+}
+.structure-link {
+  display: inline-block;
+  margin-top: 22px;
+  border-bottom: 1px solid #10182055;
+  padding-bottom: 7px;
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .campaign-posters {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .campaign-poster,
+  .campaign-profile {
+    aspect-ratio: auto;
+  }
+  .campaign-heading {
+    gap: 20px;
+  }
+  .campaign-heading h2,
+  .campaign-heading > p:last-child {
+    margin-top: 0;
+  }
+  .campaign-profile {
+    max-width: 100%;
+  }
+  .structure-heading {
+    display: block;
+  }
+  .structure-heading > p {
+    margin-top: 22px;
+    font-size: 12px;
+  }
+  .structure-parts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 18px;
+  }
+  .structure-parts h3 {
+    font-size: 16px;
+  }
+  .structure-figure {
+    margin-top: 28px;
+  }
+  .structure-figure figcaption {
+    font-size: 8px;
+  }
+}
+@media (forced-colors: active) {
+  h2 .text-accent,
+  .campaign-heading h2 span,
+  .hero-v2 h1 em,
+  .lab-section h2 span {
+    background: none;
+    color: CanvasText;
+  }
+}

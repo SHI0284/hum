@@ -32,6 +32,10 @@
       rel="stylesheet"
       href="styles/campaign.css"
     />
+    <link
+      rel="stylesheet"
+      href="styles/product-detail.css"
+    />
     <script
       src="scripts/main.js"
       defer
@@ -220,7 +224,7 @@
           <h2 id="campaign-title">
             가까이 두고,
             <br />
-            <span>더 깊이 듣다.</span>
+            <span class="text-accent">더 깊이 듣다.</span>
           </h2>
           <p>
             손에 닿는 작은 형태.
@@ -293,7 +297,7 @@
           <h2>
             늘 걷던 길에도,
             <br />
-            처음 듣는 순간이 있다.
+            <span class="text-accent">처음 듣는 순간이 있다.</span>
           </h2>
           <div class="story-copy">
             <p>
@@ -343,12 +347,18 @@
             <h2>
               소리를 향해
               <br />
-              작은 틈을 열다.
+              <span class="text-accent">작은 틈을 열다.</span>
             </h2>
             <p class="body-copy">
               소리를 받아들이는 ‘귀’와 세상으로 연결되는 ‘틈’에서 출발한 디자인. 원판을 여는 작은
               움직임으로, 주변에 집중하는 순간을 만듭니다.
             </p>
+            <a
+              class="structure-link"
+              href="#structure"
+            >
+              제품 구성도 살펴보기 ↗
+            </a>
             <div class="device-facts">
               <div>
                 <span class="mono">01</span>
@@ -474,6 +484,86 @@
         </div>
       </section>
 
+      <!-- 제품 구성도: 부품 배치와 조립 구조 | 바로가기: #structure -->
+      <section
+        id="structure"
+        class="structure-section section"
+        aria-labelledby="structure-title"
+      >
+        <div class="section-label mono">
+          <span>HUM / PRODUCT STRUCTURE</span>
+          <a href="#device">디바이스로 돌아가기 ↗</a>
+        </div>
+        <div class="structure-heading">
+          <h2 id="structure-title">
+            작은 형태 안에,
+            <br />
+            <span class="text-accent">모여 있는 것들.</span>
+          </h2>
+          <p>
+            겉으로 보이는 형태부터 안쪽의 부품까지.
+            <br />
+            HUM을 이루는 구조를 펼쳐 봅니다.
+          </p>
+        </div>
+        <figure class="structure-figure">
+          <a
+            href="assets/products/hum-exploded-structure.webp"
+            target="_blank"
+            rel="noopener"
+            aria-label="HUM 제품 구성도 크게 보기, 새 탭"
+          >
+            <img
+              src="assets/products/hum-exploded-structure.webp"
+              alt="HUM 분해 구성도: 원형 후면 커버, 내부 프레임, 배터리 홀더, 제어 보드, 디스플레이 모듈, 스피커와 외장 하우징의 배치"
+              width="2800"
+              height="1574"
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            <span class="mono">EXPLODED VIEW / HUM</span>
+            <span>이미지를 눌러 크게 보기 ↗</span>
+          </figcaption>
+        </figure>
+        <div class="structure-parts">
+          <article>
+            <span class="mono">01 / BODY</span>
+            <h3>외장과 원형 커버</h3>
+            <p>제품의 형태를 이루는 하우징과 후면 원판.</p>
+          </article>
+          <article>
+            <span class="mono">02 / FRAME</span>
+            <h3>내부 프레임과 체결부</h3>
+            <p>부품을 배치하고 고정하는 지지 구조.</p>
+          </article>
+          <article>
+            <span class="mono">03 / POWER</span>
+            <h3>배터리 홀더와 배선</h3>
+            <p>전원부를 담고 각 부품을 연결하는 구성.</p>
+          </article>
+          <article>
+            <span class="mono">04 / CONTROL</span>
+            <h3>제어 보드</h3>
+            <p>전자 부품을 연결하는 내부 보드.</p>
+          </article>
+          <article>
+            <span class="mono">05 / DISPLAY</span>
+            <h3>디스플레이 모듈</h3>
+            <p>소리의 시각적 표현을 보여주는 화면부.</p>
+          </article>
+          <article>
+            <span class="mono">06 / SOUND</span>
+            <h3>스피커</h3>
+            <p>제품 안에 배치된 사운드 출력 부품.</p>
+          </article>
+        </div>
+        <p class="small-note">
+          제공된 제품 구성도에 보이는 주요 요소를 기준으로 한 디자인 안내입니다. 세부 부품과 사양은
+          개발 과정에서 변경될 수 있습니다.
+        </p>
+      </section>
+
       <!-- 05. 사용 흐름 — 채집, 선택, 기록 | 바로가기: #journey -->
       <section
         id="journey"
@@ -487,7 +577,7 @@
           <h2>
             하루 하나의 소리.
             <br />
-            쌓여 가는 나의 감각.
+            <span class="text-accent">쌓여 가는 나의 감각.</span>
           </h2>
           <p class="body-copy">
             더 많이 기록하기보다, 한 번 더 느끼기.
@@ -532,7 +622,7 @@
             <h2>
               오늘의 감각을
               <br />
-              <span>조합해 보세요.</span>
+              <span class="text-accent">조합해 보세요.</span>
             </h2>
           </div>
           <p class="body-copy">
@@ -847,7 +937,7 @@
             <h2>
               나의 작은 발견이
               <br />
-              도시의 귀가 된다면.
+              <span class="text-accent">도시의 귀가 된다면.</span>
             </h2>
             <p class="body-copy">
               골목, 통학로, 정류장, 공원.
@@ -967,7 +1057,7 @@
             <h2>
               기술과 감각 사이,
               <br />
-              새로운 연결을 만듭니다.
+              <span class="text-accent">새로운 연결을 만듭니다.</span>
             </h2>
             <p class="body-copy">
               code&amp;는 HUM을 통해 일상의 소리와 사람을 연결합니다. 주변에 귀 기울이는 작은
@@ -996,7 +1086,7 @@
             <h2>
               서로 다른 감각이 모여,
               <br />
-              하나의 경험이 됩니다.
+              <span class="text-accent">하나의 경험이 됩니다.</span>
             </h2>
           </div>
           <div class="team-aside">
@@ -1182,7 +1272,7 @@
         <h2>
           오늘은 어떤 소리를
           <br />
-          남기고 싶나요?
+          <span class="text-accent">남기고 싶나요?</span>
         </h2>
         <a
           href="#device"
