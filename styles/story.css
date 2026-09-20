@@ -9,9 +9,11 @@
   letter-spacing: -0.06em;
 }
 .hero-v2 #hero-title em {
-  background: none;
-  color: #acd0e1;
-  -webkit-text-fill-color: currentColor;
+  background: linear-gradient(180deg, #91b8e0 0%, #b8dee3 55%, #f1e7c5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 #story {
   padding-top: 64px;
@@ -369,4 +371,12 @@
   margin-top: 48px;
   color: #7c8a96;
   font-size: 9px;
+}
+
+@media (forced-colors: active) {
+  .hero-v2 #hero-title em {
+    background: none;
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+  }
 }
