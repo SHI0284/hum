@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-transparent.svg" alt="HUM" width="240">
+  <img src="assets/brand/hum-logo.svg" alt="HUM" width="240">
 </p>
 <p align="center"><strong>일상을 듣다. 감각을 남기다.</strong><br>Sound–Visual Archiving Device · A product by code&amp;</p>
 <p align="center"><a href="https://hum-archive.com/">브랜드 사이트</a> · <a href="https://hum-archive.com/#archive">그래픽 조합 체험</a></p>
@@ -13,7 +13,7 @@ HUM은 일상의 소리를 채집하고, 그 순간의 감각을 시각적 아�
 [HUM 브랜드 사이트 →](https://hum-archive.com/)
 
 <p align="center">
-  <img src="assets/device.png" alt="HUM 디바이스 전면 디자인 — 아트워크 화면과 스피커" width="620">
+  <img src="assets/products/hum-front-concept.png" alt="HUM 디바이스 전면 디자인 — 아트워크 화면과 스피커" width="620">
 </p>
 <p align="center"><sub>HUM DEVICE · 개발 중인 제품의 디자인 콘셉트</sub></p>
 
@@ -22,17 +22,17 @@ HUM은 일상의 소리를 채집하고, 그 순간의 감각을 시각적 아�
 출근길의 발걸음, 창문을 두드리는 빗소리, 정류장에 스치는 바람.
 HUM은 이동과 기다림의 시간을 주변을 듣고 느끼는 작은 루틴으로 바꾸고자 합니다.
 
-| 흐름 | 경험 |
-| --- | --- |
-| **OPEN · 열기** | 디바이스의 원판을 열어 주변의 소리에 집중합니다. |
-| **LISTEN · 듣기** | 마음이 머무는 소리를 채집하고, 하루의 소리 하나와 그때의 감정을 선택합니다. |
-| **WONDER · 간직하기** | 소리의 특징을 담은 아트워크로 순간을 기록하고 다시 마주합니다. |
+| 흐름                  | 경험                                                                        |
+| --------------------- | --------------------------------------------------------------------------- |
+| **OPEN · 열기**       | 디바이스의 원판을 열어 주변의 소리에 집중합니다.                            |
+| **LISTEN · 듣기**     | 마음이 머무는 소리를 채집하고, 하루의 소리 하나와 그때의 감정을 선택합니다. |
+| **WONDER · 간직하기** | 소리의 특징을 담은 아트워크로 순간을 기록하고 다시 마주합니다.              |
 
 <table>
   <tr><th>OPEN · 소리를 향해 열기</th><th>CLOSE · 순간을 간직하기</th></tr>
   <tr>
-    <td><img src="assets/device-open.png" alt="원판을 연 HUM 디바이스" width="420"></td>
-    <td><img src="assets/device-closed.png" alt="원판을 닫은 HUM 디바이스" width="420"></td>
+    <td><img src="assets/products/hum-back-open.png" alt="원판을 연 HUM 디바이스" width="420"></td>
+    <td><img src="assets/products/hum-back-closed.png" alt="원판을 닫은 HUM 디바이스" width="420"></td>
   </tr>
 </table>
 
@@ -59,21 +59,20 @@ HUM은 사용자가 동의한 익명 데이터를 통해 생활권의 음환경�
 
 ## Made by code&
 
-<img src="assets/code-and-transparent.svg" alt="code& 회사 로고" width="200">
-
+<img src="assets/brand/code-and-logo.svg" alt="code& 회사 로고" width="200">
 
 **code&는 회사명이며, HUM은 code&가 만드는 제품입니다.**
 
 소프트웨어, 디자인, 전자공학의 서로 다른 시선으로 기술과 감각을 연결합니다.
 
-| 팀원 | 전공 |
-| --- | --- |
+| 팀원   | 전공               |
+| ------ | ------------------ |
 | 오은서 | 소프트웨어융합학과 |
 | 서혜인 | 소프트웨어융합학과 |
-| 정소윤 | 산업디자인학과 |
-| 장소영 | 시각디자인학과 |
-| 박주영 | 전자공학과 |
-| 이영재 | 전자공학과 |
+| 정소윤 | 산업디자인학과     |
+| 장소영 | 시각디자인학과     |
+| 박주영 | 전자공학과         |
+| 이영재 | 전자공학과         |
 
 ## 현재 진행 상황
 
@@ -86,3 +85,7 @@ HUM은 시제품 개발 단계입니다. 사이트의 제품 이미지와 동작
 이 저장소는 [HUM 브랜드 사이트](https://hum-archive.com/)의 소스와 그래픽·영상 자산을 관리합니다.
 
 **OPEN. LISTEN. WONDER!**
+
+## 사이트 수정하기
+
+문구·사진·팀원 정보 수정 위치와 파일 구성은 [편집 가이드](docs/EDITING.md)를 확인하세요.

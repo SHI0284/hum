@@ -1,0 +1,12 @@
+{
+  "name": "hum-brand-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write index.html styles scripts README.md docs package.json .prettierrc.json",
+    "format:check": "prettier --check index.html styles scripts README.md docs package.json .prettierrc.json"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

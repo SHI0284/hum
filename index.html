@@ -1,51 +1,818 @@
 <!doctype html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HUM by code&amp; — 일상의 소리를 수집하다</title>
-<meta name="description" content="열고, 듣고, 궁금해 하세요. 일상의 소리를 채집하고 나만의 아트워크로 남기는 사운드 아카이빙 디바이스, HUM.">
-<meta name="theme-color" content="#0e1117">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1117'/%3E%3Cpath d='M9 8v16m14-16v16M9 16h14' stroke='%2391b8e0' stroke-width='3' fill='none'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="experience.css"><link rel="stylesheet" href="campaign.css"><script src="script.js" defer></script><script src="experience.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#main">본문 바로가기</a>
-<div class="reading-progress" aria-hidden="true"></div>
-<header class="header"><a class="company-brand" href="#company" aria-label="code& 회사 소개"><img src="assets/code-and-transparent.svg" alt="code&" width="832" height="384"></a><div class="brand-divider" aria-hidden="true"></div><a class="product-brand signature-nav" href="#" aria-label="HUM 처음으로"><img src="assets/logo-transparent.svg" alt="HUM" width="132" height="50"><span class="mono">by code&amp;</span></a><nav aria-label="주요 메뉴"><a href="#campaign">Campaign</a><a href="#device">Device</a><a href="#archive">Play with HUM</a><a href="#team">Our team</a></nav><a class="header-link" href="#archive">감각을 조합해보기 <span aria-hidden="true">↗</span></a></header>
-<main id="main">
-<section class="hero hero-v2" aria-labelledby="hero-title">
-<div class="hero-top mono"><span>A PRODUCT BY CODE&amp;</span><span>SOUND. SENSE. SOMETHING YOURS.</span></div>
-<div class="hero-layout"><div class="hero-copy"><div class="product-signature"><img src="assets/logo-transparent.svg" alt="HUM" width="132" height="50"><span class="mono">SOUND–VISUAL<br>ARCHIVING DEVICE</span></div><h1 id="hero-title">일상을 듣다.<br>감각을 <em>남기다.</em></h1><p class="intro">스쳐 가던 소리가, 나만의 형태로.<br>세상에 귀 기울이는 작은 움직임에서<br>HUM의 이야기가 시작됩니다.</p><div class="hero-actions"><a class="button" href="#archive">나의 HUM 조합하기 <span aria-hidden="true">↗</span></a></div></div>
-<figure class="hero-art motion-hero"><div class="orbital-label mono"><span>EVER–CHANGING FORMS</span><span id="hero-pair">B1 + C1</span></div><div class="hero-video-wrap" data-tilt><video id="hero-video" class="ambient-video" muted playsinline preload="metadata" poster="assets/motion/b1c1.jpg" aria-label="B1과 C1 그래픽 조각이 연결되고 움직이는 HUM 아트워크"><source src="assets/motion/b1c1.mp4" type="video/mp4"></video><div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div><figcaption><span class="mono">A SOUND YOU CAN SEE.</span><button type="button" class="motion-control" id="hero-motion" aria-label="첫 화면 모션 재생">모션 재생 <span aria-hidden="true">▷</span></button></figcaption></figure></div>
-<div class="hero-bottom"><a href="#story" class="mono">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a><div class="hero-caption"><span>01 — OPEN</span><span>02 — LISTEN</span><span>03 — WONDER</span></div><span>매일 하나의 소리, 매일 다른 나의 감각.</span></div></section>
-<section id="campaign" class="campaign-section" aria-labelledby="campaign-title">
-<div class="campaign-heading"><p class="mono">HUM / THE CAMPAIGN — 2026</p><h2 id="campaign-title">가까이 두고,<br><span>더 깊이 듣다.</span></h2><p>손에 닿는 작은 형태.<br>그 안에 담기는, 당신의 하루.</p></div>
-<div class="campaign-posters">
-<figure class="campaign-poster campaign-duo"><img src="assets/campaign-duo.webp" alt="두 모델이 HUM 디바이스를 카메라 가까이 들고 있는 캠페인 사진" width="2000" height="1440" loading="lazy"><figcaption><span class="mono">01 / LISTEN CLOSER</span><p>세상과 나 사이,<br>하나의 HUM.</p><a href="#device">디바이스 살펴보기 <span aria-hidden="true">↗</span></a></figcaption></figure>
-<figure class="campaign-poster campaign-profile"><img src="assets/campaign-profile.webp" alt="모델이 HUM의 원형 뒷면을 얼굴 가까이에 들고 있는 측면 사진" width="1086" height="1448" loading="lazy"><figcaption><span class="mono">02 / KEEP A MOMENT</span><p>들었던 순간을,<br>곁에.</p><img src="assets/logo-transparent.svg" alt="HUM" width="132" height="50"></figcaption></figure>
-</div><div class="campaign-foot mono"><span>OPEN. LISTEN. WONDER!</span><span>A PRODUCT BY code&amp;</span></div>
-</section>
-<section id="story" class="story section"><div class="section-label mono"><span>01 / OUR STORY</span><span>A LITTLE LESS SCROLL. A LITTLE MORE SOUL.</span></div><div class="story-layout"><h2>늘 걷던 길에도,<br>처음 듣는 순간이 있다.</h2><div class="story-copy"><p>출근길의 발걸음, 정류장에 스치는 바람,<br>오후의 창문을 두드리는 빗소리.</p><p>화면을 바라보는 동안 지나쳤던 소리들.<br>HUM은 이동과 기다림의 시간을<br>주변에 귀 기울이는 작은 루틴으로 바꿉니다.</p><span class="small-note">일상을 듣고, 감각을 모으는 사운드–비주얼 아카이빙.</span></div></div><div class="story-words mono"><span>OPEN.</span><span>LISTEN.</span><span>WONDER!</span></div></section>
-<section id="device" class="device section"><div class="section-label mono"><span>02 / THE DEVICE</span><span>DESIGNED TO OPEN YOUR SENSES</span></div><div class="device-layout"><figure class="product-figure"><img src="assets/device.png" alt="사운드 아트워크가 표시된 화면과 스피커를 갖춘 HUM 디바이스 전면 디자인" loading="lazy" width="1150" height="967"><figcaption class="mono">HUM DEVICE / DESIGN CONCEPT</figcaption></figure><div class="device-copy"><p class="eyebrow">손끝에서 시작되는 감각</p><h2>소리를 향해<br>작은 틈을 열다.</h2><p class="body-copy">소리를 받아들이는 ‘귀’와 세상으로 연결되는 ‘틈’에서 출발한 디자인. 원판을 여는 작은 움직임으로, 주변에 집중하는 순간을 만듭니다.</p><div class="device-facts"><div><span class="mono">01</span><p>열면, 채집의 시작</p></div><div><span class="mono">02</span><p>닫으면, 하나의 기록</p></div><div><span class="mono">03</span><p>화면 위로 피어나는 소리</p></div></div><p class="small-note">현재 시제품 개발 중이며, 제품 이미지와 동작은 설계안을 바탕으로 합니다.</p></div></div><div class="interaction"><figure><div class="interaction-image"><img id="interaction-image" src="assets/device-open.png" alt="뒷면 원판을 열어 소리를 채집하는 HUM 제품 설계" loading="lazy" width="1000" height="595"></div></figure><div class="interaction-copy"><div class="toggle" role="group" aria-label="제품 동작 살펴보기"><button type="button" aria-pressed="true" data-mode="open">열기 <span class="mono">OPEN</span></button><button type="button" aria-pressed="false" data-mode="closed">닫기 <span class="mono">CLOSE</span></button></div><p class="mono interaction-state" id="interaction-state">01 / RECORDING ON</p><h3 id="interaction-title">바깥의 소리에 귀 기울이세요.</h3><p class="body-copy" id="interaction-description">원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다. 화면 대신 지금 머무는 공간을 바라보세요.</p><p class="small-note">제품의 개폐 동작을 보여주는 디자인 미리보기입니다.</p></div></div><div class="product-editorial"><div class="editorial-heading"><p class="mono">HUM / IN DETAIL</p><h3>손끝에서 만나는 형태.</h3><p>가까이서 보는 HUM의 디자인.</p></div><div class="product-gallery">
-<figure><img src="assets/product-palm.webp" alt="손바닥 위에 올려진 HUM 디바이스의 정면" width="2000" height="1124" loading="lazy"><figcaption><span class="mono">01 / FRONT</span><span>손 위의 작은 아카이브</span></figcaption></figure>
-<figure><img src="assets/product-back.webp" alt="원형 개폐부가 있는 HUM 디바이스의 뒷면" width="2000" height="1124" loading="lazy"><figcaption><span class="mono">02 / BACK</span><span>소리를 향해 열리는 틈</span></figcaption></figure>
-<figure><img src="assets/product-hands.webp" alt="두 손으로 감싼 HUM 디바이스의 사선 모습" width="2000" height="1124" loading="lazy"><figcaption><span class="mono">03 / IN YOUR HANDS</span><span>일상에 가까운 오브제</span></figcaption></figure>
-</div><p class="small-note">제품의 형태와 사용 장면을 보여주는 디자인 이미지입니다. HUM은 시제품 개발 중입니다.</p></div></section>
-<section id="journey" class="journey section reveal"><div class="section-label mono"><span>03 / YOUR DAILY RITUAL</span><span>ONE DAY, ONE HUM.</span></div><div class="section-heading"><h2>하루 하나의 소리.<br>쌓여 가는 나의 감각.</h2><p class="body-copy">더 많이 기록하기보다, 한 번 더 느끼기.<br>하루의 소리 하나를 골라 그때의 마음과 함께 남겨보세요.</p></div><div class="steps"><article><span class="step-number mono">01</span><p class="mono step-en">COLLECT</p><h3>일상의 소리를 채집하고</h3><p>마음이 머무는 순간, HUM을 열어 주변의 소리를 담습니다.</p></article><article><span class="step-number mono">02</span><p class="mono step-en">CHOOSE</p><h3>오늘의 감각을 고르고</h3><p>하루에 하나의 소리를 선택하고, 그 순간 느꼈던 감정을 남깁니다.</p></article><article><span class="step-number mono">03</span><p class="mono step-en">PRESERVE</p><h3>나만의 모양으로 간직하다</h3><p>소리의 특징을 담은 아트워크로 지나간 순간을 다시 마주합니다.</p></article></div></section>
-<section id="archive" class="archive lab-section section"><div class="section-label mono"><span>04 / PLAY WITH HUM</span><span>SIX FRAGMENTS. YOUR COMBINATION.</span></div><div class="section-heading"><div><p class="eyebrow">당신의 호기심으로 완성되는 형태</p><h2>오늘의 감각을<br><span>조합해 보세요.</span></h2></div><p class="body-copy">여섯 개의 조각, 열다섯 가지 만남.<br>두 조각을 골라 HUM의 그래픽이<br>서로 연결되는 순간을 만나보세요.</p></div>
-<div class="sound-lab"><div class="lab-stage"><div class="stage-header mono"><span>HUM / FORM EXPLORER</span><span id="combination-counter">12 / 15</span></div><div class="lab-video-area"><video id="lab-video" muted loop playsinline preload="none" poster="assets/motion/b1c1.jpg" aria-label="선택한 B1과 C1의 그래픽 조합 영상"><source src="assets/motion/b1c1.mp4" type="video/mp4"></video><div class="stage-loading" id="stage-loading" hidden>새로운 형태를 불러오는 중</div></div><div class="stage-bottom"><div><span class="mono stage-small">CURRENT COMBINATION</span><strong id="combination-title">B1 + C1</strong></div><button id="lab-play" type="button" class="circle-button" aria-label="조합 영상 재생">▷</button></div><div class="video-progress" aria-hidden="true"><span id="video-progress"></span></div></div>
-<div class="lab-controls"><div class="control-heading"><span class="mono">01 / PICK TWO</span><span id="selection-count">2 / 2 선택</span></div><h3>어떤 조각이 끌리나요?</h3><p class="control-intro">두 조각을 골라보세요. 새 조각을 누르면<br>먼저 선택한 조각이 바뀝니다.</p><div class="fragment-grid" role="group" aria-label="조합할 그래픽 조각 두 개 선택"><button type="button" class="fragment" data-fragment="a1" aria-label="그래픽 조각 A1" aria-pressed="false"><img src="assets/motion/Aa1_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">A1</span><span class="fragment-check" aria-hidden="true">+</span></button><button type="button" class="fragment" data-fragment="a2" aria-label="그래픽 조각 A2" aria-pressed="false"><img src="assets/motion/Aa2_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">A2</span><span class="fragment-check" aria-hidden="true">+</span></button><button type="button" class="fragment" data-fragment="b1" aria-label="그래픽 조각 B1" aria-pressed="true"><img src="assets/motion/Ab1_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">B1</span><span class="fragment-check" aria-hidden="true">+</span></button><button type="button" class="fragment" data-fragment="b2" aria-label="그래픽 조각 B2" aria-pressed="false"><img src="assets/motion/Ab2_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">B2</span><span class="fragment-check" aria-hidden="true">+</span></button><button type="button" class="fragment" data-fragment="c1" aria-label="그래픽 조각 C1" aria-pressed="true"><img src="assets/motion/Ac1_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">C1</span><span class="fragment-check" aria-hidden="true">+</span></button><button type="button" class="fragment" data-fragment="c2" aria-label="그래픽 조각 C2" aria-pressed="false"><img src="assets/motion/Ac2_N.png" alt="" width="720" height="720" loading="lazy"><span class="mono">C2</span><span class="fragment-check" aria-hidden="true">+</span></button></div><p id="selection-status" class="selection-status" role="status" aria-live="polite">B1과 C1이 만나고 있어요.</p><div class="speed-control"><label for="motion-speed"><span class="mono">02 / SET THE PACE</span><span id="speed-label">1.0×</span></label><input type="range" id="motion-speed" min="0.5" max="1.5" step="0.25" value="1" aria-label="모션 재생 속도"><div class="range-labels mono"><span>SLOW</span><span>FAST</span></div></div><button class="shuffle-button" id="shuffle" type="button"><span aria-hidden="true">↻</span> 다른 조합 만나기 <span class="mono">SURPRISE ME</span></button><p class="small-note">HUM 그래픽 원본을 활용한 시각 체험입니다.<br>실제 소리를 녹음하거나 분석하지 않습니다.</p></div></div>
-<div class="archive-note"><p>들었던 순간을,<br>바라볼 수 있도록.</p><div><p>HUM은 소리의 크기와 높낮이, 장소와 시간에 따라 그래픽이 달라지는 경험을 설계합니다. 연동 앱에서는 날짜·감정·장소별로 아트워크를 모아 보고, 채집한 순간을 돌아볼 수 있도록 준비하고 있습니다.</p><span class="small-note">위 체험은 그래픽 조합 예시이며, 음향 분석과 앱 연동 기능은 개발 중입니다.</span></div></div>
-<div class="palette" aria-label="하루의 시간대를 담은 HUM 브랜드 컬러"><div style="--swatch:#ffe8b9"><span>MORNING</span><span>Yellow</span></div><div style="--swatch:#b8dee3"><span>AFTERNOON</span><span>Mint</span></div><div style="--swatch:#91b8e0"><span>EVENING</span><span>Blue</span></div><div style="--swatch:#0e1117" class="night-swatch"><span>NIGHT</span><span>Black</span></div><div style="--swatch:#f2f2f2"><span>DAY</span><span>White</span></div></div></section>
-<section id="city" class="city section"><div class="section-label mono"><span>05 / BEYOND PERSONAL</span><span>나의 기록에서, 우리의 도시로.</span></div><div class="city-layout"><div><p class="eyebrow">HUM이 그리는 다음 풍경</p><h2>나의 작은 발견이<br>도시의 귀가 된다면.</h2><p class="body-copy">골목, 통학로, 정류장, 공원.<br>우리가 실제로 살아가는 곳의 소리가 모이면,<br>더 나은 음환경을 이해하는 단서가 됩니다.</p></div><div class="city-detail"><p>HUM은 개인의 감각 기록이 시민 참여형 음환경 데이터로 이어지는 구조를 구상합니다. 사용자가 동의한 익명 데이터를 모아, 지자체의 소음 관리와 도시계획을 돕는 것이 목표입니다.</p><div class="data-flow"><div><span class="mono">01 / YOU</span><strong>일상의 소리 채집</strong></div><span aria-hidden="true">↓</span><div><span class="mono">02 / PRIVACY</span><strong>동의와 익명화</strong></div><span aria-hidden="true">↓</span><div><span class="mono">03 / OUR CITY</span><strong>생활권 음환경 이해</strong></div></div><p class="small-note">공공 데이터 연계는 개발 구상입니다. 사용자 동의, 기기 내 음성 구간 보호, 격자 단위 위치 처리, 음향 특징값 전송을 설계 원칙으로 삼고 있습니다.</p></div></div></section>
-<section class="faq section"><div class="section-label mono"><span>A FEW THINGS TO KNOW</span><span>HUM에 대해 더 궁금하다면</span></div><div class="faq-layout"><h2>자주 묻는 질문</h2><div><details><summary>HUM은 어떤 제품인가요?<span aria-hidden="true">+</span></summary><p>주변의 소리를 채집하는 디바이스와 개인 아카이브를 위한 연동 앱을 함께 설계하는 프로젝트입니다. 소리를 수치나 녹음 파일로만 남기는 데서 나아가, 일상의 감각을 시각적 아트워크로 간직하는 경험을 제안합니다.</p></details><details><summary>지금 구매하거나 사용할 수 있나요?<span aria-hidden="true">+</span></summary><p>제공된 기획서 기준으로 브랜드, 제품 구조, 사용자 경험 설계를 마치고 시제품을 제작 중입니다. 출시 일정과 판매 가격은 아직 이 페이지에서 안내하지 않습니다.</p></details><details><summary>채집한 소리는 어떻게 아트워크가 되나요?<span aria-hidden="true">+</span></summary><p>소리의 크기와 주파수, 장소 등 여러 특성에 따라 여섯 개의 그래픽 조각을 조합하는 방식으로 설계하고 있습니다. 시간대의 색과 사용자가 남긴 감정까지 반영해 각 순간에 다른 형태를 만드는 것이 목표입니다.</p></details><details><summary>기록이 공공 데이터로 자동 제공되나요?<span aria-hidden="true">+</span></summary><p>기획안에서는 사용자가 동의한 경우에만 공공 데이터 제공에 참여하는 방식을 채택하고 있습니다. 사람 목소리 구간 보호, 위치 격자화, 원본 대신 음향 특징값 전송을 계획하며, 실제 운영 정책은 개발 과정에서 구체화할 예정입니다.</p></details></div></div></section>
-<section id="company" class="company-section section"><div class="section-label mono"><span>THE COMPANY BEHIND HUM</span><span>CODE&amp; × SENSES</span></div><div class="company-layout"><div class="company-logo-wrap"><img src="assets/code-and-transparent.svg" alt="code& 회사 로고" width="832" height="384" loading="lazy"><span class="mono">A COMPANY. AN OPEN QUESTION.</span></div><div><p class="eyebrow">HUM을 만드는 회사, code&amp;</p><h2>기술과 감각 사이,<br>새로운 연결을 만듭니다.</h2><p class="body-copy">code&amp;는 HUM을 통해 일상의 소리와 사람을 연결합니다. 주변에 귀 기울이는 작은 행동이, 개인의 기록을 넘어 우리가 사는 환경을 이해하는 경험이 되도록.</p><div class="company-product"><span class="mono">COMPANY / code&amp;</span><span class="mono">PRODUCT / HUM</span></div></div></div></section>
-<section id="team" class="team-section section"><div class="section-label mono"><span>PEOPLE / code&amp;</span><span>SIX PEOPLE. ONE SHARED CURIOSITY.</span></div><div class="team-heading"><div><p class="eyebrow">HUM을 함께 만드는 사람들</p><h2>서로 다른 감각이 모여,<br>하나의 경험이 됩니다.</h2></div><div class="team-aside"><span class="team-count mono">06</span><p>소프트웨어, 디자인, 전자공학.<br>여섯 명의 시선으로 일상의 소리를 탐구합니다.</p></div></div><div class="people-grid"><article class="person"><div class="person-photo" style="--photo-x:0%;--photo-y:0%" role="img" aria-label="오은서 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">01</span></div><div class="person-info"><h3>오은서</h3><span class="person-plus" aria-hidden="true">↗</span><p>소프트웨어융합학과</p><span class="person-email" aria-label=" 이메일 jeachim3@khu.ac.kr">jeachim3@khu.ac.kr</span></div></article><article class="person"><div class="person-photo" style="--photo-x:50%;--photo-y:0%" role="img" aria-label="서혜인 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">02</span></div><div class="person-info"><h3>서혜인</h3><span class="person-plus" aria-hidden="true">↗</span><p>소프트웨어융합학과</p><span class="person-email" aria-label="이메일 gpdls0411@khu.ac.kr">gpdls0411@khu.ac.kr</span></div></article><article class="person"><div class="person-photo" style="--photo-x:100%;--photo-y:0%" role="img" aria-label="정소윤 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">03</span></div><div class="person-info"><h3>정소윤</h3><span class="person-plus" aria-hidden="true">↗</span><p>산업디자인학과</p><span class="person-email" aria-label="이메일 jungsoyun21@gmail.com">jungsoyun21@gmail.com</span></div></article><article class="person"><div class="person-photo" style="--photo-x:0%;--photo-y:100%" role="img" aria-label="장소영 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">04</span></div><div class="person-info"><h3>장소영</h3><span class="person-plus" aria-hidden="true">↗</span><p>시각디자인학과</p><span class="person-email" aria-label="이메일 wkdthdud130@gmail.com">wkdthdud130@gmail.com</span></div></article><article class="person"><div class="person-photo" style="--photo-x:50%;--photo-y:100%" role="img" aria-label="박주영 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">05</span></div><div class="person-info"><h3>박주영</h3><span class="person-plus" aria-hidden="true">↗</span><p>전자공학과</p><span class="person-email" aria-label="이메일 wnndud17@khu.ac.kr">wnndud17@khu.ac.kr</span></div></article><article class="person"><div class="person-photo" style="--photo-x:100%;--photo-y:100%" role="img" aria-label="이영재 프로필 위치의 임시 가상 인물 사진"><span class="photo-placeholder mono">SAMPLE PORTRAIT</span><span class="person-index mono">06</span></div><div class="person-info"><h3>이영재</h3><span class="person-plus" aria-hidden="true">↗</span><p>전자공학과</p><span class="person-email" aria-label="이메일 yjyjing@naver.com">yjyjing@naver.com</span></div></article></div><p class="team-note">프로필 사진은 실제 팀원과 무관한 AI 생성 임시 이미지이며, 이메일은 교체 예정인 예시 주소입니다.</p></section>
-<section class="closing"><p class="mono">OPEN. LISTEN. WONDER!</p><h2>오늘은 어떤 소리를<br>남기고 싶나요?</h2><a href="#device" class="button">HUM 다시 살펴보기 <span aria-hidden="true">↑</span></a><span class="closing-hum closing-signature" aria-hidden="true"><img src="assets/logo-transparent.svg" alt="" width="132" height="50"></span></section>
-</main>
-<footer><a class="brand" href="#" aria-label="HUM 맨 위로"><img src="assets/logo-transparent.svg" alt="HUM" width="132" height="50"></a><p>HUM — a product by code&amp;.</p><span class="mono">© 2026 code&amp;. All rights reserved.</span><span class="development">Concept & prototype in development</span></footer>
-<dialog id="intro-dialog" aria-label="HUM 시작 인트로"><div class="intro-top"><span class="mono">A PRODUCT BY code&amp;</span><button type="button" id="skip-intro">건너뛰기 <span aria-hidden="true">↗</span></button></div><div class="intro-visual"><video id="intro-film" muted playsinline preload="auto" poster="assets/start-poster.jpg" aria-label="귀의 형태가 나타나는 HUM 시작 모션"><source src="assets/hum-device-start.mp4" type="video/mp4"></video></div><div class="intro-wordmark"><img src="assets/logo-transparent.svg" alt="HUM" width="132" height="50"><span class="mono">OPEN. LISTEN. WONDER.</span></div><div class="intro-progress" aria-hidden="true"><span id="intro-progress-fill"></span></div></dialog>
-<div class="cursor-orbit" id="cursor-orbit" aria-hidden="true"><span></span></div><div id="ripple-layer" aria-hidden="true"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HUM by code&amp; — 일상의 소리를 수집하다</title>
+    <meta
+      name="description"
+      content="열고, 듣고, 궁금해 하세요. 일상의 소리를 채집하고 나만의 아트워크로 남기는 사운드 아카이빙 디바이스, HUM."
+    />
+    <meta name="theme-color" content="#0e1117" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1117'/%3E%3Cpath d='M9 8v16m14-16v16M9 16h14' stroke='%2391b8e0' stroke-width='3' fill='none'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/experience.css" />
+    <link rel="stylesheet" href="styles/campaign.css" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/experience.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <!-- 공통 헤더: 로고와 내비게이션 -->
+    <header class="header">
+      <a class="company-brand" href="#company" aria-label="code& 회사 소개"
+        ><img src="assets/brand/code-and-logo.svg" alt="code&" width="832" height="384"
+      /></a>
+      <div class="brand-divider" aria-hidden="true"></div>
+      <a class="product-brand signature-nav" href="#" aria-label="HUM 처음으로"
+        ><img src="assets/brand/hum-logo.svg" alt="HUM" width="132" height="50" /><span class="mono"
+          >by code&amp;</span
+        ></a
+      >
+      <nav aria-label="주요 메뉴">
+        <a href="#campaign">Campaign</a><a href="#device">Device</a
+        ><a href="#archive">Play with HUM</a><a href="#team">Our team</a>
+      </nav>
+      <a class="header-link" href="#archive"
+        >감각을 조합해보기 <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main">
+      <!-- 01. 첫 화면 — 제품 메시지와 랜덤 모션 -->
+      <section class="hero hero-v2" aria-labelledby="hero-title">
+        <div class="hero-top mono">
+          <span>A PRODUCT BY CODE&amp;</span><span>SOUND. SENSE. SOMETHING YOURS.</span>
+        </div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <div class="product-signature">
+              <img src="assets/brand/hum-logo.svg" alt="HUM" width="132" height="50" /><span
+                class="mono"
+                >SOUND–VISUAL<br />ARCHIVING DEVICE</span
+              >
+            </div>
+            <h1 id="hero-title">일상을 듣다.<br />감각을 <em>남기다.</em></h1>
+            <p class="intro">
+              스쳐 가던 소리가, 나만의 형태로.<br />세상에 귀 기울이는 작은 움직임에서<br />HUM의
+              이야기가 시작됩니다.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#archive"
+                >나의 HUM 조합하기 <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <figure class="hero-art motion-hero">
+            <div class="orbital-label mono">
+              <span>EVER–CHANGING FORMS</span><span id="hero-pair">B1 + C1</span>
+            </div>
+            <div class="hero-video-wrap" data-tilt>
+              <video
+                id="hero-video"
+                class="ambient-video"
+                muted
+                playsinline
+                preload="metadata"
+                poster="assets/motion/b1c1.jpg"
+                aria-label="B1과 C1 그래픽 조각이 연결되고 움직이는 HUM 아트워크"
+              >
+                <source src="assets/motion/b1c1.mp4" type="video/mp4" />
+              </video>
+              <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <figcaption>
+              <span class="mono">A SOUND YOU CAN SEE.</span
+              ><button
+                type="button"
+                class="motion-control"
+                id="hero-motion"
+                aria-label="첫 화면 모션 재생"
+              >
+                모션 재생 <span aria-hidden="true">▷</span>
+              </button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero-bottom">
+          <a href="#story" class="mono">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a>
+          <div class="hero-caption">
+            <span>01 — OPEN</span><span>02 — LISTEN</span><span>03 — WONDER</span>
+          </div>
+          <span>매일 하나의 소리, 매일 다른 나의 감각.</span>
+        </div>
+      </section>
 
-</body></html>
+      <!-- 02. 캠페인 — 모델 포스터 | 바로가기: #campaign -->
+      <section id="campaign" class="campaign-section" aria-labelledby="campaign-title">
+        <div class="campaign-heading">
+          <p class="mono">HUM / THE CAMPAIGN — 2026</p>
+          <h2 id="campaign-title">가까이 두고,<br /><span>더 깊이 듣다.</span></h2>
+          <p>손에 닿는 작은 형태.<br />그 안에 담기는, 당신의 하루.</p>
+        </div>
+        <div class="campaign-posters">
+          <figure class="campaign-poster campaign-duo">
+            <img
+              src="assets/campaign/two-models-with-hum.webp"
+              alt="두 모델이 HUM 디바이스를 카메라 가까이 들고 있는 캠페인 사진"
+              width="2000"
+              height="1440"
+              loading="lazy"
+            />
+            <figcaption>
+              <span class="mono">01 / LISTEN CLOSER</span>
+              <p>세상과 나 사이,<br />하나의 HUM.</p>
+              <a href="#device">디바이스 살펴보기 <span aria-hidden="true">↗</span></a>
+            </figcaption>
+          </figure>
+          <figure class="campaign-poster campaign-profile">
+            <img
+              src="assets/campaign/model-profile-with-hum.webp"
+              alt="모델이 HUM의 원형 뒷면을 얼굴 가까이에 들고 있는 측면 사진"
+              width="1086"
+              height="1448"
+              loading="lazy"
+            />
+            <figcaption>
+              <span class="mono">02 / KEEP A MOMENT</span>
+              <p>들었던 순간을,<br />곁에.</p>
+              <img src="assets/brand/hum-logo.svg" alt="HUM" width="132" height="50" />
+            </figcaption>
+          </figure>
+        </div>
+        <div class="campaign-foot mono">
+          <span>OPEN. LISTEN. WONDER!</span><span>A PRODUCT BY code&amp;</span>
+        </div>
+      </section>
 
+      <!-- 03. 브랜드 이야기 | 바로가기: #story -->
+      <section id="story" class="story section">
+        <div class="section-label mono">
+          <span>01 / OUR STORY</span><span>A LITTLE LESS SCROLL. A LITTLE MORE SOUL.</span>
+        </div>
+        <div class="story-layout">
+          <h2>늘 걷던 길에도,<br />처음 듣는 순간이 있다.</h2>
+          <div class="story-copy">
+            <p>출근길의 발걸음, 정류장에 스치는 바람,<br />오후의 창문을 두드리는 빗소리.</p>
+            <p>
+              화면을 바라보는 동안 지나쳤던 소리들.<br />HUM은 이동과 기다림의 시간을<br />주변에 귀
+              기울이는 작은 루틴으로 바꿉니다.
+            </p>
+            <span class="small-note">일상을 듣고, 감각을 모으는 사운드–비주얼 아카이빙.</span>
+          </div>
+        </div>
+        <div class="story-words mono">
+          <span>OPEN.</span><span>LISTEN.</span><span>WONDER!</span>
+        </div>
+      </section>
+
+      <!-- 04. 제품 소개 — 개폐 동작과 제품 갤러리 | 바로가기: #device -->
+      <section id="device" class="device section">
+        <div class="section-label mono">
+          <span>02 / THE DEVICE</span><span>DESIGNED TO OPEN YOUR SENSES</span>
+        </div>
+        <div class="device-layout">
+          <figure class="product-figure">
+            <img
+              src="assets/products/hum-front-concept.png"
+              alt="사운드 아트워크가 표시된 화면과 스피커를 갖춘 HUM 디바이스 전면 디자인"
+              loading="lazy"
+              width="1150"
+              height="967"
+            />
+            <figcaption class="mono">HUM DEVICE / DESIGN CONCEPT</figcaption>
+          </figure>
+          <div class="device-copy">
+            <p class="eyebrow">손끝에서 시작되는 감각</p>
+            <h2>소리를 향해<br />작은 틈을 열다.</h2>
+            <p class="body-copy">
+              소리를 받아들이는 ‘귀’와 세상으로 연결되는 ‘틈’에서 출발한 디자인. 원판을 여는 작은
+              움직임으로, 주변에 집중하는 순간을 만듭니다.
+            </p>
+            <div class="device-facts">
+              <div>
+                <span class="mono">01</span>
+                <p>열면, 채집의 시작</p>
+              </div>
+              <div>
+                <span class="mono">02</span>
+                <p>닫으면, 하나의 기록</p>
+              </div>
+              <div>
+                <span class="mono">03</span>
+                <p>화면 위로 피어나는 소리</p>
+              </div>
+            </div>
+            <p class="small-note">
+              현재 시제품 개발 중이며, 제품 이미지와 동작은 설계안을 바탕으로 합니다.
+            </p>
+          </div>
+        </div>
+        <div class="interaction">
+          <figure>
+            <div class="interaction-image">
+              <img
+                id="interaction-image"
+                src="assets/products/hum-back-open.png"
+                alt="뒷면 원판을 열어 소리를 채집하는 HUM 제품 설계"
+                loading="lazy"
+                width="1000"
+                height="595"
+              />
+            </div>
+          </figure>
+          <div class="interaction-copy">
+            <div class="toggle" role="group" aria-label="제품 동작 살펴보기">
+              <button type="button" aria-pressed="true" data-mode="open">
+                열기 <span class="mono">OPEN</span></button
+              ><button type="button" aria-pressed="false" data-mode="closed">
+                닫기 <span class="mono">CLOSE</span>
+              </button>
+            </div>
+            <p class="mono interaction-state" id="interaction-state">01 / RECORDING ON</p>
+            <h3 id="interaction-title">바깥의 소리에 귀 기울이세요.</h3>
+            <p class="body-copy" id="interaction-description">
+              원판을 열면 주변의 소리를 채집하는 순간이 시작됩니다. 화면 대신 지금 머무는 공간을
+              바라보세요.
+            </p>
+            <p class="small-note">제품의 개폐 동작을 보여주는 디자인 미리보기입니다.</p>
+          </div>
+        </div>
+        <div class="product-editorial">
+          <div class="editorial-heading">
+            <p class="mono">HUM / IN DETAIL</p>
+            <h3>손끝에서 만나는 형태.</h3>
+            <p>가까이서 보는 HUM의 디자인.</p>
+          </div>
+          <div class="product-gallery">
+            <figure>
+              <img
+                src="assets/products/hum-front-on-palm.webp"
+                alt="손바닥 위에 올려진 HUM 디바이스의 정면"
+                width="2000"
+                height="1124"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="mono">01 / FRONT</span><span>손 위의 작은 아카이브</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/products/hum-back-studio.webp"
+                alt="원형 개폐부가 있는 HUM 디바이스의 뒷면"
+                width="2000"
+                height="1124"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="mono">02 / BACK</span><span>소리를 향해 열리는 틈</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/products/hum-held-in-hands.webp"
+                alt="두 손으로 감싼 HUM 디바이스의 사선 모습"
+                width="2000"
+                height="1124"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="mono">03 / IN YOUR HANDS</span><span>일상에 가까운 오브제</span>
+              </figcaption>
+            </figure>
+          </div>
+          <p class="small-note">
+            제품의 형태와 사용 장면을 보여주는 디자인 이미지입니다. HUM은 시제품 개발 중입니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05. 사용 흐름 — 채집, 선택, 기록 | 바로가기: #journey -->
+      <section id="journey" class="journey section reveal">
+        <div class="section-label mono">
+          <span>03 / YOUR DAILY RITUAL</span><span>ONE DAY, ONE HUM.</span>
+        </div>
+        <div class="section-heading">
+          <h2>하루 하나의 소리.<br />쌓여 가는 나의 감각.</h2>
+          <p class="body-copy">
+            더 많이 기록하기보다, 한 번 더 느끼기.<br />하루의 소리 하나를 골라 그때의 마음과 함께
+            남겨보세요.
+          </p>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step-number mono">01</span>
+            <p class="mono step-en">COLLECT</p>
+            <h3>일상의 소리를 채집하고</h3>
+            <p>마음이 머무는 순간, HUM을 열어 주변의 소리를 담습니다.</p>
+          </article>
+          <article>
+            <span class="step-number mono">02</span>
+            <p class="mono step-en">CHOOSE</p>
+            <h3>오늘의 감각을 고르고</h3>
+            <p>하루에 하나의 소리를 선택하고, 그 순간 느꼈던 감정을 남깁니다.</p>
+          </article>
+          <article>
+            <span class="step-number mono">03</span>
+            <p class="mono step-en">PRESERVE</p>
+            <h3>나만의 모양으로 간직하다</h3>
+            <p>소리의 특징을 담은 아트워크로 지나간 순간을 다시 마주합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 06. 그래픽 체험 — 조각 선택과 컬렉션 | 바로가기: #archive -->
+      <section id="archive" class="archive lab-section section">
+        <div class="section-label mono">
+          <span>04 / PLAY WITH HUM</span><span>SIX FRAGMENTS. YOUR COMBINATION.</span>
+        </div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">당신의 호기심으로 완성되는 형태</p>
+            <h2>오늘의 감각을<br /><span>조합해 보세요.</span></h2>
+          </div>
+          <p class="body-copy">
+            여섯 개의 조각, 열다섯 가지 만남.<br />두 조각을 골라 HUM의 그래픽이<br />서로 연결되는
+            순간을 만나보세요.
+          </p>
+        </div>
+        <div class="sound-lab">
+          <div class="lab-stage">
+            <div class="stage-header mono">
+              <span>HUM / FORM EXPLORER</span><span id="combination-counter">12 / 15</span>
+            </div>
+            <div class="lab-video-area">
+              <video
+                id="lab-video"
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster="assets/motion/b1c1.jpg"
+                aria-label="선택한 B1과 C1의 그래픽 조합 영상"
+              >
+                <source src="assets/motion/b1c1.mp4" type="video/mp4" />
+              </video>
+              <div class="stage-loading" id="stage-loading" hidden>새로운 형태를 불러오는 중</div>
+            </div>
+            <div class="stage-bottom">
+              <div>
+                <span class="mono stage-small">CURRENT COMBINATION</span
+                ><strong id="combination-title">B1 + C1</strong>
+              </div>
+              <button id="lab-play" type="button" class="circle-button" aria-label="조합 영상 재생">
+                ▷
+              </button>
+            </div>
+            <div class="video-progress" aria-hidden="true"><span id="video-progress"></span></div>
+          </div>
+          <div class="lab-controls">
+            <div class="control-heading">
+              <span class="mono">01 / PICK TWO</span><span id="selection-count">2 / 2 선택</span>
+            </div>
+            <h3>어떤 조각이 끌리나요?</h3>
+            <p class="control-intro">
+              두 조각을 골라보세요. 새 조각을 누르면<br />먼저 선택한 조각이 바뀝니다.
+            </p>
+            <div class="fragment-grid" role="group" aria-label="조합할 그래픽 조각 두 개 선택">
+              <button
+                type="button"
+                class="fragment"
+                data-fragment="a1"
+                aria-label="그래픽 조각 A1"
+                aria-pressed="false"
+              >
+                <img
+                  src="assets/motion/fragment-a1.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">A1</span
+                ><span class="fragment-check" aria-hidden="true">+</span></button
+              ><button
+                type="button"
+                class="fragment"
+                data-fragment="a2"
+                aria-label="그래픽 조각 A2"
+                aria-pressed="false"
+              >
+                <img
+                  src="assets/motion/fragment-a2.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">A2</span
+                ><span class="fragment-check" aria-hidden="true">+</span></button
+              ><button
+                type="button"
+                class="fragment"
+                data-fragment="b1"
+                aria-label="그래픽 조각 B1"
+                aria-pressed="true"
+              >
+                <img
+                  src="assets/motion/fragment-b1.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">B1</span
+                ><span class="fragment-check" aria-hidden="true">+</span></button
+              ><button
+                type="button"
+                class="fragment"
+                data-fragment="b2"
+                aria-label="그래픽 조각 B2"
+                aria-pressed="false"
+              >
+                <img
+                  src="assets/motion/fragment-b2.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">B2</span
+                ><span class="fragment-check" aria-hidden="true">+</span></button
+              ><button
+                type="button"
+                class="fragment"
+                data-fragment="c1"
+                aria-label="그래픽 조각 C1"
+                aria-pressed="true"
+              >
+                <img
+                  src="assets/motion/fragment-c1.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">C1</span
+                ><span class="fragment-check" aria-hidden="true">+</span></button
+              ><button
+                type="button"
+                class="fragment"
+                data-fragment="c2"
+                aria-label="그래픽 조각 C2"
+                aria-pressed="false"
+              >
+                <img
+                  src="assets/motion/fragment-c2.png"
+                  alt=""
+                  width="720"
+                  height="720"
+                  loading="lazy"
+                /><span class="mono">C2</span
+                ><span class="fragment-check" aria-hidden="true">+</span>
+              </button>
+            </div>
+            <p id="selection-status" class="selection-status" role="status" aria-live="polite">
+              B1과 C1이 만나고 있어요.
+            </p>
+            <div class="speed-control">
+              <label for="motion-speed"
+                ><span class="mono">02 / SET THE PACE</span
+                ><span id="speed-label">1.0×</span></label
+              ><input
+                type="range"
+                id="motion-speed"
+                min="0.5"
+                max="1.5"
+                step="0.25"
+                value="1"
+                aria-label="모션 재생 속도"
+              />
+              <div class="range-labels mono"><span>SLOW</span><span>FAST</span></div>
+            </div>
+            <button class="shuffle-button" id="shuffle" type="button">
+              <span aria-hidden="true">↻</span> 다른 조합 만나기
+              <span class="mono">SURPRISE ME</span>
+            </button>
+            <p class="small-note">
+              HUM 그래픽 원본을 활용한 시각 체험입니다.<br />실제 소리를 녹음하거나 분석하지
+              않습니다.
+            </p>
+          </div>
+        </div>
+        <div class="archive-note">
+          <p>들었던 순간을,<br />바라볼 수 있도록.</p>
+          <div>
+            <p>
+              HUM은 소리의 크기와 높낮이, 장소와 시간에 따라 그래픽이 달라지는 경험을 설계합니다.
+              연동 앱에서는 날짜·감정·장소별로 아트워크를 모아 보고, 채집한 순간을 돌아볼 수 있도록
+              준비하고 있습니다.
+            </p>
+            <span class="small-note"
+              >위 체험은 그래픽 조합 예시이며, 음향 분석과 앱 연동 기능은 개발 중입니다.</span
+            >
+          </div>
+        </div>
+        <div class="palette" aria-label="하루의 시간대를 담은 HUM 브랜드 컬러">
+          <div style="--swatch: #ffe8b9"><span>MORNING</span><span>Yellow</span></div>
+          <div style="--swatch: #b8dee3"><span>AFTERNOON</span><span>Mint</span></div>
+          <div style="--swatch: #91b8e0"><span>EVENING</span><span>Blue</span></div>
+          <div style="--swatch: #0e1117" class="night-swatch">
+            <span>NIGHT</span><span>Black</span>
+          </div>
+          <div style="--swatch: #f2f2f2"><span>DAY</span><span>White</span></div>
+        </div>
+      </section>
+
+      <!-- 07. 도시 음환경 비전 | 바로가기: #city -->
+      <section id="city" class="city section">
+        <div class="section-label mono">
+          <span>05 / BEYOND PERSONAL</span><span>나의 기록에서, 우리의 도시로.</span>
+        </div>
+        <div class="city-layout">
+          <div>
+            <p class="eyebrow">HUM이 그리는 다음 풍경</p>
+            <h2>나의 작은 발견이<br />도시의 귀가 된다면.</h2>
+            <p class="body-copy">
+              골목, 통학로, 정류장, 공원.<br />우리가 실제로 살아가는 곳의 소리가 모이면,<br />더
+              나은 음환경을 이해하는 단서가 됩니다.
+            </p>
+          </div>
+          <div class="city-detail">
+            <p>
+              HUM은 개인의 감각 기록이 시민 참여형 음환경 데이터로 이어지는 구조를 구상합니다.
+              사용자가 동의한 익명 데이터를 모아, 지자체의 소음 관리와 도시계획을 돕는 것이
+              목표입니다.
+            </p>
+            <div class="data-flow">
+              <div><span class="mono">01 / YOU</span><strong>일상의 소리 채집</strong></div>
+              <span aria-hidden="true">↓</span>
+              <div><span class="mono">02 / PRIVACY</span><strong>동의와 익명화</strong></div>
+              <span aria-hidden="true">↓</span>
+              <div><span class="mono">03 / OUR CITY</span><strong>생활권 음환경 이해</strong></div>
+            </div>
+            <p class="small-note">
+              공공 데이터 연계는 개발 구상입니다. 사용자 동의, 기기 내 음성 구간 보호, 격자 단위
+              위치 처리, 음향 특징값 전송을 설계 원칙으로 삼고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- 08. 자주 묻는 질문 -->
+      <section class="faq section">
+        <div class="section-label mono">
+          <span>A FEW THINGS TO KNOW</span><span>HUM에 대해 더 궁금하다면</span>
+        </div>
+        <div class="faq-layout">
+          <h2>자주 묻는 질문</h2>
+          <div>
+            <details>
+              <summary>HUM은 어떤 제품인가요?<span aria-hidden="true">+</span></summary>
+              <p>
+                주변의 소리를 채집하는 디바이스와 개인 아카이브를 위한 연동 앱을 함께 설계하는
+                프로젝트입니다. 소리를 수치나 녹음 파일로만 남기는 데서 나아가, 일상의 감각을 시각적
+                아트워크로 간직하는 경험을 제안합니다.
+              </p>
+            </details>
+            <details>
+              <summary>지금 구매하거나 사용할 수 있나요?<span aria-hidden="true">+</span></summary>
+              <p>
+                제공된 기획서 기준으로 브랜드, 제품 구조, 사용자 경험 설계를 마치고 시제품을 제작
+                중입니다. 출시 일정과 판매 가격은 아직 이 페이지에서 안내하지 않습니다.
+              </p>
+            </details>
+            <details>
+              <summary>
+                채집한 소리는 어떻게 아트워크가 되나요?<span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                소리의 크기와 주파수, 장소 등 여러 특성에 따라 여섯 개의 그래픽 조각을 조합하는
+                방식으로 설계하고 있습니다. 시간대의 색과 사용자가 남긴 감정까지 반영해 각 순간에
+                다른 형태를 만드는 것이 목표입니다.
+              </p>
+            </details>
+            <details>
+              <summary>
+                기록이 공공 데이터로 자동 제공되나요?<span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                기획안에서는 사용자가 동의한 경우에만 공공 데이터 제공에 참여하는 방식을 채택하고
+                있습니다. 사람 목소리 구간 보호, 위치 격자화, 원본 대신 음향 특징값 전송을 계획하며,
+                실제 운영 정책은 개발 과정에서 구체화할 예정입니다.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09. 회사 소개 — code& | 바로가기: #company -->
+      <section id="company" class="company-section section">
+        <div class="section-label mono">
+          <span>THE COMPANY BEHIND HUM</span><span>CODE&amp; × SENSES</span>
+        </div>
+        <div class="company-layout">
+          <div class="company-logo-wrap">
+            <img
+              src="assets/brand/code-and-logo.svg"
+              alt="code& 회사 로고"
+              width="832"
+              height="384"
+              loading="lazy"
+            /><span class="mono">A COMPANY. AN OPEN QUESTION.</span>
+          </div>
+          <div>
+            <p class="eyebrow">HUM을 만드는 회사, code&amp;</p>
+            <h2>기술과 감각 사이,<br />새로운 연결을 만듭니다.</h2>
+            <p class="body-copy">
+              code&amp;는 HUM을 통해 일상의 소리와 사람을 연결합니다. 주변에 귀 기울이는 작은
+              행동이, 개인의 기록을 넘어 우리가 사는 환경을 이해하는 경험이 되도록.
+            </p>
+            <div class="company-product">
+              <span class="mono">COMPANY / code&amp;</span><span class="mono">PRODUCT / HUM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 팀 소개 — 이름, 전공, 이메일 | 바로가기: #team -->
+      <section id="team" class="team-section section">
+        <div class="section-label mono">
+          <span>PEOPLE / code&amp;</span><span>SIX PEOPLE. ONE SHARED CURIOSITY.</span>
+        </div>
+        <div class="team-heading">
+          <div>
+            <p class="eyebrow">HUM을 함께 만드는 사람들</p>
+            <h2>서로 다른 감각이 모여,<br />하나의 경험이 됩니다.</h2>
+          </div>
+          <div class="team-aside">
+            <span class="team-count mono">06</span>
+            <p>소프트웨어, 디자인, 전자공학.<br />여섯 명의 시선으로 일상의 소리를 탐구합니다.</p>
+          </div>
+        </div>
+        <div class="people-grid">
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 0%; --photo-y: 0%"
+              role="img"
+              aria-label="오은서 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">01</span>
+            </div>
+            <div class="person-info">
+              <h3>오은서</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>소프트웨어융합학과</p>
+              <span class="person-email" aria-label=" 이메일 jeachim3@khu.ac.kr"
+                >jeachim3@khu.ac.kr</span
+              >
+            </div>
+          </article>
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 50%; --photo-y: 0%"
+              role="img"
+              aria-label="서혜인 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">02</span>
+            </div>
+            <div class="person-info">
+              <h3>서혜인</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>소프트웨어융합학과</p>
+              <span class="person-email" aria-label="이메일 gpdls0411@khu.ac.kr"
+                >gpdls0411@khu.ac.kr</span
+              >
+            </div>
+          </article>
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 100%; --photo-y: 0%"
+              role="img"
+              aria-label="정소윤 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">03</span>
+            </div>
+            <div class="person-info">
+              <h3>정소윤</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>산업디자인학과</p>
+              <span class="person-email" aria-label="이메일 jungsoyun21@gmail.com"
+                >jungsoyun21@gmail.com</span
+              >
+            </div>
+          </article>
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 0%; --photo-y: 100%"
+              role="img"
+              aria-label="장소영 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">04</span>
+            </div>
+            <div class="person-info">
+              <h3>장소영</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>시각디자인학과</p>
+              <span class="person-email" aria-label="이메일 wkdthdud130@gmail.com"
+                >wkdthdud130@gmail.com</span
+              >
+            </div>
+          </article>
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 50%; --photo-y: 100%"
+              role="img"
+              aria-label="박주영 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">05</span>
+            </div>
+            <div class="person-info">
+              <h3>박주영</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>전자공학과</p>
+              <span class="person-email" aria-label="이메일 wnndud17@khu.ac.kr"
+                >wnndud17@khu.ac.kr</span
+              >
+            </div>
+          </article>
+          <article class="person">
+            <div
+              class="person-photo"
+              style="--photo-x: 100%; --photo-y: 100%"
+              role="img"
+              aria-label="이영재 프로필 위치의 임시 가상 인물 사진"
+            >
+              <span class="photo-placeholder mono">SAMPLE PORTRAIT</span
+              ><span class="person-index mono">06</span>
+            </div>
+            <div class="person-info">
+              <h3>이영재</h3>
+              <span class="person-plus" aria-hidden="true">↗</span>
+              <p>전자공학과</p>
+              <span class="person-email" aria-label="이메일 yjyjing@naver.com"
+                >yjyjing@naver.com</span
+              >
+            </div>
+          </article>
+        </div>
+        <p class="team-note">
+          프로필 사진은 실제 팀원과 무관한 AI 생성 임시 이미지이며, 이메일은 교체 예정인 예시
+          주소입니다.
+        </p>
+      </section>
+      <section class="closing">
+        <p class="mono">OPEN. LISTEN. WONDER!</p>
+        <h2>오늘은 어떤 소리를<br />남기고 싶나요?</h2>
+        <a href="#device" class="button">HUM 다시 살펴보기 <span aria-hidden="true">↑</span></a
+        ><span class="closing-hum closing-signature" aria-hidden="true"
+          ><img src="assets/brand/hum-logo.svg" alt="" width="132" height="50"
+        /></span>
+      </section>
+    </main>
+    <!-- 공통 푸터 -->
+    <footer>
+      <a class="brand" href="#" aria-label="HUM 맨 위로"
+        ><img src="assets/brand/hum-logo.svg" alt="HUM" width="132" height="50"
+      /></a>
+      <p>HUM — a product by code&amp;.</p>
+      <span class="mono">© 2026 code&amp;. All rights reserved.</span
+      ><span class="development">Concept & prototype in development</span>
+    </footer>
+    <dialog id="intro-dialog" aria-label="HUM 시작 인트로">
+      <div class="intro-top">
+        <span class="mono">A PRODUCT BY code&amp;</span
+        ><button type="button" id="skip-intro">건너뛰기 <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="intro-visual">
+        <video
+          id="intro-film"
+          muted
+          playsinline
+          preload="auto"
+          poster="assets/video/hum-opening-poster.jpg"
+          aria-label="귀의 형태가 나타나는 HUM 시작 모션"
+        >
+          <source src="assets/video/hum-opening-intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="intro-wordmark">
+        <img src="assets/brand/hum-logo.svg" alt="HUM" width="132" height="50" /><span class="mono"
+          >OPEN. LISTEN. WONDER.</span
+        >
+      </div>
+      <div class="intro-progress" aria-hidden="true"><span id="intro-progress-fill"></span></div>
+    </dialog>
+    <div class="cursor-orbit" id="cursor-orbit" aria-hidden="true"><span></span></div>
+    <div id="ripple-layer" aria-hidden="true"></div>
+  </body>
+</html>
